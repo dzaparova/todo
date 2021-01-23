@@ -24,3 +24,7 @@ def index2(request):
 def index3(request):
     return render(request, "index3.html")
 
+def store(request):
+    return render (request , "books.html")
+
+
