@@ -1,12 +1,43 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Книжный магазин
-    </title>
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'stylesb/indexb.css'%}"/>
 </head>
+
 <body>
-    
+    <h3 class="book_title">BOOKS STORE</h3>
+    <div class="book_box">
+    <input type="text" name="title" placeholder="Заголок"> <br><br>
+    <input type="text" name="subtitle" placeholder="Подзаголовок"><br><br>
+    <input type="text" name="description" placeholder="Описание"><br><br>
+    <input type="number" name="price" placeholder="Цена"><br><br>
+    <input type="text" name="genre" placeholder="Жанр"><br><br>
+    <input type="text" name="author" placeholder="Автор"><br><br>
+    <input type="datetime-local" name="year" placeholder="Год"><br><br>
+    <button>Добавить</button>
+    </div>
+    <hr>
+    <section>
+        {%for book in books%}
+        <div class="book_container">
+                <div class="book_item">
+                    <div class="book_item_header">
+                        <h4>{{todo.text}}</h4>
+                    </div>
+            <h3>{{book.title}}-{{book.author}}</h3>
+            <h3>{{book.subtitle}}</h3>
+            <h4>{{book.genre}}</h4>
+            <h4>{{book.price}}</h4>
+            <h4>{{book.year}}</h4>
+
+        </div>
+        {%endfor%}
+    </section>
 </body>
+
 </html>
