@@ -32,14 +32,14 @@
                 <div class="todo_item_footer">
                     <p>{{todo.created_at}}</p>
                     <div class="action_buttons">
-                        <img src="./icons/icons8-звезда-50.png" />
-                        <img src="./icons/icons8-очистить-корзину-30.png" />
+                        <img src="{% static './icons/icons8-звезда-50.png'%}" />
+                        <img src="{% static './icons/delete.png'%}" />
                     </div>
 
                 </div>
             </div>
 
-        {% endfor%}
+            {% endfor%}
         </div>
     </section>>
 </body>
