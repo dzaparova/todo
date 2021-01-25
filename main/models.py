@@ -7,7 +7,7 @@ class ToDo(models.Model):
     is_favorite = models.BooleanField(default=False)
 
 
-class Book (models.Model):
+class Book(models.Model):
     title = models.CharField(max_length=50)
     subtitle = models.CharField(max_length=50)
     description = models.TextField()

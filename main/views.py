@@ -24,16 +24,34 @@ def index2(request):
 def index3(request):
     return render(request, "index3.html")
 
-def books(request): 
-    books = Book.objects.all()
-    return render(request, "books.html" , {"books" : books})
-
 def add_todo(request):
     form = request.POST
     text = form ["todo_text"]
     todo = ToDo(text=text)
     todo.save()
     return redirect(test)
-    
+
+
+def books(request): 
+    books = Book.objects.all()
+    return render(request,"books.html",{"books": books})
+
+
+def add_book(request):
+    form = request.POST
+    book=Book(
+        title= form["title"],
+        subtitle= form["subtitle"],
+        description=  form["description"],
+        price = form["price"],
+        genre= form["genre"],
+        author= form["author"],
+        year=form["year"][:10],
+    )
+    book.save()
+
+    return redirect(books)
+
+
 
 

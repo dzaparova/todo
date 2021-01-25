@@ -1,40 +1,54 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 5px;
-    color:#263238
-}
-
-section{
-    display:space-around;
-    flex-direction: column;
-    align-items: baseline;
+.book_title{
+    border: 2px solid rgb(17, 15, 4);
+    margin: 10px 30% 10px 30%;
+    padding: 3%;
+    background-color: rgb(78, 97, 185);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .book_box{
-    margin: 50px 30% 0 30%;
-
+    margin: auto;
+    width: 80%;
 }
-.book_title{
-    border: 1px solid gray;
-    margin: 5px 30% 0 30%;
-    padding: 5px;
-    text-align: center;
-    background-color: #50e0c8;
+.input1_book{
+    padding: 3% 5% 3% 5%;
+    background-color: yellow;
+}
+.input2_book{
+    padding: 3% 5% 3% 5%;
+    background-color: yellow;
+}
+.input3_book{
+    padding: 3% 5% 3% 5%;
+    background-color: yellow;
+}
+.input4_book{
+    padding: 3% 5% 3% 5%;
+    background-color: yellow;
+}
+.input5_book{
+    padding: 3% 5% 3% 5%;
+    background-color: yellow;
+}
+.input6_book{
+    padding: 3% 5% 3% 5%;
+    background-color: yellow;
+}
+.input7_book{
+    padding: 3% 5% 3% 5%;
+    background-color: yellow;
+}
+
+.btn{
+    padding: 3% 5% 3% 5%;
+    background-color: greenyellow;
 }
 
 .books_container{
-    margin: 50px 30% 0 30%;;
-    display: flex;
+    padding: 10px 20px;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
 }
 
-.book_item{
-    border: 1px solid gray;
-    width: 24%;
-    padding: 10px 15px;
-    background-color: #8d8ea1;
-    margin-bottom: 20px;
-}
